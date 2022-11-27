@@ -80,7 +80,7 @@ var swiperMain = function () {
     loop: false,
     preloadImages: true,
     autoplay: {
-      delay: 10000,
+      delay: 300000,
       disableOnInteraction: false
     },
     centerInsufficientSlides: true,
@@ -95,19 +95,22 @@ var swiperMain = function () {
     },
     breakpoints: {
       768: {
-        spaceBetween: 40,
-        slidesPerView: 2
+        spaceBetween: 40
+        // slidesPerView: 2,
       },
+
       1024: {
-        spaceBetween: 100,
-        slidesPerView: 3
+        spaceBetween: 100
+        // slidesPerView: 3,
       },
+
       1200: {
-        spaceBetween: 200,
-        slidesPerView: 4
+        spaceBetween: 200
+        // slidesPerView: 4,
       }
     }
   });
+
   var init = function init() {};
   return {
     init: init
