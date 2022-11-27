@@ -1287,9 +1287,14 @@ input:focus::placeholder {
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  min-height: 300px; }
+  @media (min-width: 768px) {
+    .swiper-main {
+      min-height: 700px; } }
   .swiper-main__wrapper {
-    position: relative; }
+    position: relative;
+    min-height: 100%; }
   .swiper-main__slide-inner {
     max-width: 100%;
     padding: 1rem;
@@ -1297,6 +1302,12 @@ input:focus::placeholder {
     @media (min-width: 768px) {
       .swiper-main__slide-inner {
         padding: 2rem; } }
+  .swiper-main__slide {
+    display: flex;
+    justify-content: center; }
+    .swiper-main__slide .intro-section__image-wrapper {
+      width: 100%;
+      height: 100%; }
 
 .swiper-pagination {
   bottom: -30px;
