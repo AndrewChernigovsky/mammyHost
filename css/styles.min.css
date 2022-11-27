@@ -1762,6 +1762,7 @@ input:focus::placeholder {
   .intro-section__about {
     margin-bottom: 2rem; }
   .intro-section__map {
-    min-width: 100%; }
+    min-width: 10%; }
     .intro-section__map iframe {
-      min-width: 100%; }
+      min-width: 100%;
+      max-width: max-content; }
