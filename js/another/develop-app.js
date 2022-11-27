@@ -202,12 +202,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var HEADER_EL_HEIGHT = document.querySelector('.menu').clientHeight;
+// const HEADER_EL_HEIGHT = document.querySelector('.menu').clientHeight;
+
 var scrollSmooth = function () {
   var smoothScroll = function smoothScroll() {
     var scroll = function scroll(targetEl, duration) {
       var targets = document.querySelector(targetEl);
-      var targetsPosition = targets.getBoundingClientRect().top - HEADER_EL_HEIGHT;
+      // const targetsPosition = targets.getBoundingClientRect().top - HEADER_EL_HEIGHT;
       var startsPosition = window.pageYOffset;
       var startTime = null;
       var ease = function ease(t, b, c, d) {
